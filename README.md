@@ -18,6 +18,15 @@ post /api/users
 }
 
 
+get token
+post /api/oauth/token
+=======================
+{
+     "username": "Greenup",
+     "password": "test",
+     "grant_type": "password"   
+}
+
 
 
 
