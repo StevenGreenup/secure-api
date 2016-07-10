@@ -1,3 +1,31 @@
+New post
+post /api/posts
+========================
+{
+    "post":{
+     "title": "This is another title"   
+    }
+}
+
+New user
+post /api/users
+=======================
+{
+    "user":{
+     "username": "Greenup",
+     "password": "password"
+    }
+}
+
+
+
+
+
+
+
+
+
+
 == README
 
 This README would normally document whatever steps are necessary to get the

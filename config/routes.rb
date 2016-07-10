@@ -1,9 +1,10 @@
 Rails.application.routes.draw do
 
+  post '/api/users' => 'api/users#create'
 
     get '/api/posts' => 'api/posts#index', as: :api_index
-    get '/api/posts/:id' => 'api/posts#show'
     post '/api/posts' => 'api/posts#create'
+    get '/api/posts/:id' => 'api/posts#show'
     patch '/api/posts/:id' => 'api/posts#update'
     delete '/api/posts/:id' => 'api/posts#delete'
 
