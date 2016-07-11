@@ -1,19 +1,12 @@
-New post
-post /api/posts
-========================
-{
-    "post":{
-     "title": "This is another title"   
-    }
-}
+
 
 New user
 post /api/users
 =======================
 {
     "user":{
-     "username": "Greenup",
-     "password": "password"
+     "username": "",
+     "password": ""
     }
 }
 
@@ -22,13 +15,33 @@ get token
 post /api/oauth/token
 =======================
 {
-     "username": "Greenup",
-     "password": "test",
+     "username": "",
+     "password": "",
      "grant_type": "password"   
 }
 
+New post
+post /api/posts
+========================
+{
+    "post":{
+     "title": ""   
+    }
+}
 
-http://localhost:3000/api/posts?access_token=
+Update post
+patch /api/posts/:id
+========================
+{
+
+     "title": ""   
+}
+
+Delete post
+delete /api/posts/:id
+
+
+
 
 
 
