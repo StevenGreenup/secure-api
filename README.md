@@ -28,6 +28,8 @@ post /api/oauth/token
 }
 
 
+http://localhost:3000/api/posts?access_token=
+
 
 
 

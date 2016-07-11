@@ -23,10 +23,18 @@ protect_from_forgery with: :null_session
   end
 
   def update
-
+    @post = Post.find_by id: params[:id]
+    if @post.update params.require(:post).permit(:title)
+      render :show
+    else
+      render json: @post.errors, status: 422
+    end
   end
 
   def delete
+    @post = Post.find_by id: params[:id]
+    @post.destroy
+    head :ok
   end
 
 end
