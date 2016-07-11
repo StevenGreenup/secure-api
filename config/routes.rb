@@ -9,7 +9,7 @@ Rails.application.routes.draw do
     patch "/api/posts/:id" => 'api/posts#update'
     get "/api/posts/:id" => 'api/posts#show'
     delete "/api/posts/:id" => 'api/posts#delete'
-
+    delete "/api/users/:id" => 'api/users#delete'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
